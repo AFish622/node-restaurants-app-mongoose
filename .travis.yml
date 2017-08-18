@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: rm25PGwOr+KNXJyF/wrFqBOyp7GlOQZ+c009oUEtr4ktmq/tERrrjQeBw+bJU+d23k2XKiyi6LxlYFL4uM0oaHoWEZky2SOpSvHMtUNyiZK3VpkjeAyG2MgZR7rJSrfAlQQbZZ2IrxJoZqGVs0q6HeVzcPzdNynSDBMfkLcVg94DMZBbQnUwYiRKtqr+WOXKFPoQvQcnksgIzSXf+HWQMdMZOw9LsdxNIF+k3j07wL2yOBKjgXc8AEIa32bJMYiabT0rCBtSjzoEEmnLERdv9PUT9kBWoXbaU+iCr3QTY9f/C1teeETEb3SV8ITEwC0EkiYyHABPOVYuZQmcMUDuoHtv4/8+d7hRh3GMFaUqVfMZ7Z+KIX4qqiV6zGZ3J/3Bjxrry26MTnSdzPB4Os+H8HXvjLx7z3JcnjgFKtr3RWiLgrptheCbdm7UpCMdFMjPGRop8yF6zxQ8MyN0y8OBBuKMnh4nSWOrIEhLloJ4PBNcCGWu74r687bfZvFQkgHxqEGF/LZkSsvAlHr3Nu/v9PWkI5B+vcheNqPkDIJ5oiOJEJ+pfiZ0duJ8ulBfTAv390JHM1ihlq0oNxgC+k2WRAQI4BO3TA9+rRwjTvVfDNZqYkug/qJhqo8PDW5e6oemTK30ZN5ZtDzLsk1Lzkd9XwD1yn41F3n3o7r0NpJGcqE=
+  app: dry-castle-44813
+  on:
+    repo: AFish622/node-restaurants-app-mongoose
+    branch: feature/with-tests
