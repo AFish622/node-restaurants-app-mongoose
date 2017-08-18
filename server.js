@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 // GET requests to /restaurants => return 10 restaurants
 app.get('/restaurants', (req, res) => {
   Restaurant
-    .find
+    .find()
     // we're limiting because restaurants db has > 25,000
     // documents, and that's too much to process/return
     .limit(10)
